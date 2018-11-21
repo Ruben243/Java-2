@@ -1,0 +1,112 @@
+EJERCICIOS GRAFICOS
+
+
+
+EJERCICIO 1
+
+
+Escriba un programa que dibuje una serie ocho de círculos concéntricos. Los círculos
+deberán estar separados por 10 píxeles. Use el método drawOval de la clase
+Graphics.
+
+
+
+EJERCICIO 2
+
+
+Escriba un programa que dibuje una serie de ocho círculos concénctricos. Los
+círculos deberán estar separados por 10 píxeles. Use el método drawArc.
+
+
+
+EJERCICIO 3
+
+
+Modificar el ejercicio 1, para dibujar los óvalos mediante el uso de instancias
+de la clase Ellipse2D.Double y el método draw de la clase Graphics2D.
+
+
+
+EJERCICIO 4
+
+
+Escriba un programa que dibuje líneas de longitudes aleatorias, en colores
+aleatorios.
+
+
+
+EJERCICIO 5
+
+
+Modificar el ejercicio anterior para dibujar líneas aleatorias en colores aleatorios
+y grosores de línea aleatorios. Use la clase Line2D.Double y el método draw de
+la clase Graphics2D para dibujar las líneas.
+
+
+
+EJERCICIO 6
+
+
+Escribir un programa que muestre triángulos generados al azar en distintos colores.
+Cada triángulo deberá rellenarse con un color distinto. Use la clase GeneralPath
+y el método fill de la clase Graphics2D para dibujar los triángulos.
+
+
+
+EJERCICIO 7
+
+
+Escriba un programa que dibuje caracteres al azar, en distintos tamaños y colores
+de tipo de letra.
+
+
+
+EJERCICO 8
+
+
+Escriba un programa que dibuje una cuadrícula de 8 x 8. Use el método drawLine.
+
+
+
+EJERCICIO 9
+
+
+Modificar el ejercicio anterior, para dibujar la cuadrícula utilizando instancias
+de la clase Line2D.Double y el método draw de la clase Graphics2D.
+
+
+
+EJERCICIO 10
+
+
+Escriba un programa que dibuje una cuadrícula de 10 x 10. Use el método drawRect.
+
+
+
+EJERCICIO 11
+
+Escriba una aplicación que simule un protector de pantalla. La aplicación deberá
+dibujar líneas al azar, utilizando el método drawLine de la clase Graphics. Después
+de dibujar 100 líneas, la aplicación deberá borrarse a sí misma y empezar a
+dibujar líneas nuevamente. Para permitir al programa dibujar en forma continua, 
+coloque una llamada repaint como la última linea el método paint. ¿ Observó
+algún problema con esto en su sistema ?
+
+
+
+EJERCICIO 12
+
+He aquí un adelanto. El paquete javax.swing contiene una clase Timer, la cuál
+es capaz de llamar al método actionPerformed de la interfaz ActionListener durante
+un intervalo de tiempo fijo (especificamente en milisegundos). Modifique el ejercicio
+anterior para eliminar la llamada a repaint desde el método paint. Declare su
+clase de manera que implemente a ActionListener (El método actionPerformed deberá
+simplemente llamar a repaint). Declare una variable de instancia de tipo Timer,
+llamada temporizador, en su clase. En el constructor para su clase, escriba las
+siguientes instrucciones:
+
+temporizador = new Timer (1000, this );
+temporizador.start ();
+
+Esto crea una instancia de la clase Timer que llamará al método actionPerformed
+del objeto this cada 1000 milisegundos (es decir, cada segundo).

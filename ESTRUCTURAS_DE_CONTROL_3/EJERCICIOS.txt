@@ -1,0 +1,193 @@
+EJERCICIOS ESTRUCTURAS DE CONTROL
+
+
+
+Ejercicio 1
+
+Escriba una aplicación que encuentre el menor de varios enteros. Suponga que el
+primer valor leído especifica el número de valores que el usuario va a introducir.
+
+
+Ejercicio 2
+
+Escribir una aplicación que calcule el producto de los enteros impares del 1 al
+15, y que muestre los resultados en un cuadro de diálogo de mensaje.
+
+
+Resultado:
+
+1 * 3 * 5 * 7 * 9 * 11 * 13 * 15 = 2027025
+
+
+Ejercicio 3
+
+Escribe una aplicación que evalúe los factoriales de los enteros del 1 al 5.
+Muestre los resultados en formato tabular, en un objeto JTextArea que aparezca
+en un cuadro de diálogo de mensaje. 
+
+
+Ejercicio 4
+
+Escriba una aplicación que muestre los siguientes patrones, empleando para ello
+solo las siguientes instrucciones:
+
+System.out.print ("*")
+
+System.out.print (" ")
+
+System.out.println ()
+
+
+más bucles.
+
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+
+**********
+ *********
+  ********
+   *******
+    ******
+     *****
+      ****
+       ***
+        **
+         *
+         
+         *
+        **
+       ***
+      ****
+     *****
+    ******
+   *******
+  ********
+ *********
+**********
+
+
+Ejercicio 5
+
+Una aplicación interesante es dibujar histogramas, escribir un programa que lea
+5 números entre el 1 y el 30. Por cada número leído, su programa debe dibujar
+ese número de asteriscos adyacentes.
+
+Ej: 5, 3, 6, 1
+
+*****
+***
+******
+*
+
+
+Ejercicio 6
+
+Escriba una aplicación que imprima una tabla con los cuadrados de los números 
+decimales, en el rango de 1 al 256. Coloque los resultados en un objeto 
+JTextArea con funcionalidad de desplazamiento. Muestre el objeto JTextArea
+en un cuadro de diálogo de mensaje.
+
+
+Ejercicio 7
+
+Escriba una aplicación que imprima la siguiente figura de rombo. Puede utilizar
+instrucciones de salida que imprima un solo *, un solo espacio o un solo carácter
+de nueva linea. Maximice el uso de la repetición (con instrucciones for anidadas
+), y minimice el número de instrucciones de salida.
+
+    *    
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+    
+    
+Ejercicio 8
+
+Escriba una aplicación que pida un número y según ese número el valor que tome
+imprima la correspondiente figura:
+
+1)
+
+**********
+*        *
+*        *
+*        *
+**********
+
+2)
+
+    *
+   * *
+  *   *
+ *     *
+*********
+
+3)
+
+*********
+*
+*
+*
+*********
+
+Cualquier otro:
+
+"Ha elegido cualquier otro valor"
+
+
+Ejercicio 9
+
+Un almacen de pedidos vende cinco productos cuyos precios son los siguientes:
+
+Producto 1 --> 2.30 euros
+Producto 2 --> 4.12 euros
+Producto 3 --> 6.11 euros
+Producto 4 --> 5.12 euros
+Producto 5 --> 4.77 euros
+
+Escribir una aplicación que pida el número de producto y la cantidad vendida de
+ese producto, hasta que se introduzca el valor -1.
+
+A partir de hay debe de mostrar la lista de productos vendidos, su cantidad, y el
+valor del producto * cantidad del producto y al final la suma de todos los
+productos.
+
+Ej:
+
+Producto		Cantidad		Total producto
+
+Producto 1		 2			4.60
+Producto 2		 1			4.12
+
+TOTAL							8.72
+
+
+Ejercicio 10
+
+Escribir una aplicación que un JTextArea en un cuadro de dialogo, nos muestre la
+tabla de multiplicar del 1 al 10.
+

@@ -1,0 +1,155 @@
+EJERCICIOS - PROGRAMACIÓN BASADA EN OBJETOS
+
+
+
+EJERCICIO 1
+
+Cree una clase llamada Rectangulo. La clase debe de tener los atributos longitud
+y anchura, cada uno de los cuales debe de tener un valor predeterminado de 1. Debe
+tener también métodos para calcular el perímetro y el area rectángulo. Debe de
+tener los métodos establecer y obtener tanto para la longítud como para anchura.
+Los métodos establecer deben de verificar que la longitud y la anchura sean números
+en coma flotante mayores que 0.0 y menores que 20.0. Escriba un programa para
+probar la clase Rectangulo.
+
+NOTA: La fuente de salida debe de ser arial, tamaño 12.
+
+
+
+EJERCICIO 2
+
+Cree una clase llamada Racional para realizar operaciones aritméticas con
+fracciones. Escriba un programa para probar su clase. Use variables enteras
+para representar las variables de instancia private de la clase: el numerador
+y el denominador. Proporcione un constructor que permita a un objeto de esta
+clase inicializarse al ser declarado. El constructor debe de almacenar la
+fracción de manera reduccida; la fracción 2/4 es equivalente 1/2 y debe de
+guardarse en el objeto como 1 en el numerador y 2 en el denominador. Proporcione
+un constructor sin argumentos con valores predeterminados, en caso de que no se
+proporcionen inicializadores. Proporcione métodos public que realicen cada una
+de las siguientes operaciones:
+
+a) Sumar dos números Racional: el resultado de la suma debe de almacenarse en forma
+reducida.
+b) Restar dos números Racional: el resultado de la resta debe de almacenarse en
+forma reducida.
+c) Multiplicar dos números Racional: el resultado de la resta debe de almacenarse en
+forma reducida.
+d) Dividir dos números Racional: el resultado de la resta debe de almacenarse en
+forma reducida.
+e) Imprimir números Racional en la forma a/b, en done a es el numerador y b el
+denominador.
+f) Imprimir números Racional en formato de punto flotante.
+
+
+NOTA: Mostrar resultados ARIAL, tamaño 12.
+
+
+
+EJERCICIO 3
+
+
+Cree una clase llamada CuentaDeAhorros. Use una variable static llamada tasaInteresAnual
+para almacenar la tasa de interés anual para todas las cuentas habientes. Cada
+objeto de la clase debe contener una variable de instancia private llamada 
+saldoAhorros, que indique la cantidad que el ahorrador tiene actualmente en
+depósito. Proporcione el método calcularInteresMensual para calcular el interés
+mensual, multiplicando el saldoAhorros por la tasaInteresAnual dividida entre
+12; este interés debe sumarse al saldoAhorros. Proporcione un método static llamado
+modificarTasaInteres para establecer la tasaInteresAnual en un nuevo valor.
+Escriba un programa para probrar la clase CuentaDeAhorros. Cree dos instancias
+de objetos CuentaDeAhorros, ahorrador1 y ahorrador2, con saldos 2000.00€ y 3000.00€
+respectivamente. Establezca la tasaInteresAnual en 4%, después calcule el interés
+mensual e imprima los nuevos saldos para ambos ahorradores. Luego establezca la 
+tasaInteresAnual en 5%, calcule el interés del siguiente mes e imprima los nuevos
+saldos para ambos ahorradores.
+
+Mostrar resultados: Arial, 10
+
+
+
+EJERCICIO 4
+
+
+Cree la clase ConjuntoEnteros. Cada objeto ConjuntoEnteros puede almacenar enteros
+en el rango 0 a 100. El conjunto se representa mediante un arreglo de valores
+boolean. El elemento del arreglo a[i] es true si el entero i se encuentra en el
+conjunto. El elemento del arreglo a[j] es false si el entero j no se encuentra en
+dentro del conjunto. El constructor si argumentos inicializa el arreglo de Java
+con el "conjunto vacío" (es decir, un conjunto cuya representación de arreglo
+contiene valores false).
+
+Proporcione los siguientes métodos: el método union debe crear un tercer conjunto
+que sea la unión teórica de conjuntos para los dos conjuntos existentes (es decir,
+un elemento del tercer arreglo se establece en true si ese elemento es true en 
+cualquier o en ambos de los conjuntos existentes, en caso contrario, el elemento
+del tercer conjunto se establece en false). El método intersección debe crear
+un tercer conjunto que sea la intersección teórica de conjuntos para los dos
+conjuntos existentes (es decir, un elemento del arreglo del tercer conjunto se
+establece en false si ese elemento es false en uno o ambos de los conjuntos
+existentes; en caso contrario, el elemento del tercer conjunto se establece en
+true). El método insertarElemento debe insertar un nuevo entero k en un conjunto
+(estableciendo a[k] en true). El método eliminarElemento debe eliminar el entero
+m (estableciendo a[m] en false). El método aStringConjunto debe devolver una
+cadena que contenga un conjunto como una lista de números separados por espacios.
+Incluya sólo aquellos elementos que estén presentes en el conjunto. Use --- para
+representar un conjunto vacío. El método esIgualA debe determinar si dos conjuntos
+son iguales. Escriba un programa para probar la clase ConjuntoEnteros. Cree
+instancias de varios objetos ConjuntosEnteros. Pruebe que todos sus métodos
+funcionan correctamente.
+
+Mostrar resultado: Verdana, 10, negrita
+
+
+
+EJERCICIO 5
+
+
+Cree un applet de dibujo de líneas, rectángulos. Para este fin, cree un conjunto
+de clases de figuras "inteligentes", en las que los objetos de estas clases sepan
+como dibujarse a sí mismos si se les proporciona un objeto Graphics que les indique
+en dónde dibujarse (es decir, el objeto Graphics permite a una figura dibujarse
+en el fondo del applet). Los nombres de las clases deben ser MiLinea, MiRect.
+
+Los datos para la clase MiLinea deben de incluir las coordenadas x1, y1, x2 e y2.
+El método dibujarLinea de la clase Graphics debe conectar los dos puntos suministrados
+con un linea. Los datos para las clases MiRect deben incluir un valor coordenada x
+de la esquina superiror izquierda, un valor de coordenadas y de la esquina superior
+izquierda, una anchura (no debe ser negativa) y una altura (no debe ser negativa).
+Todos los datos en cada clase deben ser private.
+
+Además de los datos, cada clase deben declarar cuando menos los siguientes métodos public:
+
+a) Un constructor sin argumentos que establezca las coordenadas en 0.
+b) Un constructor con argumentos que establezca las coordenadas en los valores 
+suministrados.
+c) Métodos establecer para cada pieza individual de datos, los cuáles permiten al
+programador establecer cualquier pieza de datos en una figura de manera independiente
+( por ejemplo, si usted tiene una variable de instancia llamada x1, debe tener un
+método llamado establecerX1).
+d) Métodos obtener para cada pieza individual de datos, los cuáles permitan al
+programador recuperar cualquier pieza de datos en una figura de manera independiente
+( por ejemplo, si usted tiene una variable de instancia llamada x1, debe tener
+un método llamado obtenerX1).
+e) Un método dibujar con la primera línea
+
+public void dibujar (Graphics g)
+
+que se llamará desde el método paint del applet para dibujar una figura en la
+pantalla.
+
+Empiece declarando la clase MiLinea y un applet para probar sus clases. El applet
+deberá tener una variable de instancia MiLinea llamada linea, que puede hacer
+referencia a un objeto MiLinea (creado en el método init del applet con coordenadas
+aleatorias). El método paint del applet deberá dibujar la figura mediante una
+instrucción como está:
+
+linea.dibujar (g);
+
+en donde linea debe ser la referencia tipo MiLinea y g debe ser el objeto
+Graphics que será utilizado por la figura para dibujarse a sí misma en el applet.
+
+A continuación, modifique la referencia MiLinea para que sea un arreglo de referencias
+MiLinea, y codifique varios objetos MiLinea directamente en el programa para
+dibujarlos. El método paint del applet deberá recorrer cada uno de estos arreglos
+y dibujar cada una de las figuras. Cree cinco figuras de cada tipo.

@@ -1,0 +1,120 @@
+EJERCICIOS - HERENCIA Y POLIMORFISMO
+
+
+
+EJERCICIO 1
+
+
+Cree las clases que se encuentran en la jerarquía de herencia:
+
+	                     EMPLEADO
+	                 /      |        \
+                    /       |         \
+                   /        |          \
+                  /         |           \
+EmpleadoAsalariado  EmpleadoPorComision  EmpleadoPorHoras
+                            |
+                            |
+                            |
+                            |
+                  EmpleadoBaseMasComision
+
+Un empleado debe tener un primer nombre, apellido paterno y número de seguro
+social. Además, un EmpleadoAsalariado debe tener un salario semanal; un EmpleadoPorHoras debe tener un sueldo y el número de horas trabajadas; un
+EmpleadoPorComision debe tener una tasa de comisiones y ventas brutas; y un
+EmpleadoBaseMasComision debe tener un salario base. Cada clase debe tener los
+constructores apropiados, los métodos establecer y obtener. Escriba un programa
+que cree instancias de objetos de cada una de estas clases, y que muestre toda
+la información asociada con cada objeto (incluyendo la información heredada).
+
+Mostrar resultados: Arial, 12
+
+
+
+EJERCICIO 2
+
+
+Escriba una nueva clase TarjetaDeVisita que herede de la clase Object y que 
+sobrecarge el método toString para imprimir la tarjeta en pantalla.
+
+En la tarjeta deben de aparecer los campos: nombre, empresa, puesto, dirección y
+teléfono.
+
+Mostrar resultados: Arial, 14
+
+
+
+EJERCICIO 3
+
+
+Escribir una clase DiscoDatos que herede de la clase Disco. Cree ahora una clase
+DiscoDuro que herede de la clase DiscoDatos.
+
+La clase DiscoDatos debe de contener el atributo capacidad y el método
+imprimirCapacidad.
+
+La clase DiscoDuro debe de tener los campos nuevoNumSerie, nuevaCapacidad, 
+nuevaInterfaz (almacena IDE, SCSI, USB ...) y nuevoValorRevoluciones. Y los 
+métodos imprimirInterfaz e imprimirRevoluciones.
+
+Y crear una clase que pruebe todos las clases anteriores.
+
+protected class Disco {
+
+       protected String fabricante;
+       protected int numSerie;
+
+       public Disco (String nuevoFabricante, int nuevoNumSerie) {
+
+       	      fabricante = nuevoFabricante;
+       	      numSerie = nuevoNumSerie;
+
+	      }
+
+       public String imprimirFabricante () {
+
+             return fabricante;
+
+       }
+
+       public String imprimirNumeroSerie () {
+
+      	     return numSerie;
+       }
+}
+
+Mostrar resultados: Arial, 14
+
+
+
+EJERCICIO 4
+
+
+Crear una clase TarjetaVisitaConLogo que herede de la clase TarjetaDeVisita.
+Añada y sobrecargue los métodos que crea necesarios para poder imprimir una
+tarjeta de visita que incluya un logotipo, un número de fax y una dirección
+de correo electrónico.
+
+Mostrar resultados: Arial, 14
+
+
+
+EJERCICIO 5
+
+
+Crear una clase abstracta Juguetes (almacena el nombre del juguete y el método
+abstracto imprimir). Crear dos subclases que heredan de la clase abstracta Juguetes,
+que se llamen JuguetesElectricos y JuguetesMecanicos. La clase JuguetesMecanicos
+tiene el atributo numeroPiezasMecanicas y los métodos correspondientes (constructor
+para los correspondientes atributos, establecerNumeroPiezasMecanicas, 
+obtenerNumeroPiezasMecanicas, imprimir). La clase JuguetesElectricos tiene el
+atributo voltaje y los métodos correspondientes (constructor para los correspondientes
+atributos, establecerVoltaje, obtenerVoltaje, imprimir).
+
+Despues crear una clase BolsaJuguetes, el atributo es un array de juguetes y que
+tengamos los métodos (constructor este se encarga de inicializar a tantos 
+juguetes como se le indique como parametro el tipo de juguetes se selecciona de manera
+aleatoria y el método imprimir que nos imprima los juguetes que tenga la BolsaJuguetes
+(polimorfismo)). 
+
+MOSTRAR Resultados: Arial, 12

@@ -1,0 +1,114 @@
+EJERCICIOS - ESTRUCTURAS DE CONTROL 1
+
+
+Ejercicio 1
+
+Realizar un programa que muestre 100 veces tú nombre por pantalla.
+
+
+
+Ejercicio 2
+
+Utilizando bucles mostrar la tabla de multiplicar del número que se le solicite.
+
+
+
+Ejercicio 3
+
+Mostrar toda la tabla de multiplicar.
+
+
+
+Ejercicio 4
+
+El proceso de encontrar el valor más grande se utiliza frecuentemente en
+aplicaciones de ordenador. Escribir un programa que reciba como entrada una
+serie de 10 números de un solo dígito como caracteres, y que determine e imprima
+el mayor de los números.
+
+
+
+Ejercicio 5
+
+Escribir una aplicación que utilice ciclos para imprimir la siguiente tabla de
+valores:
+
+N		10*N		100*N		1000*N
+
+1		10			100		1000
+2		20			200		2000
+3		30			300		3000
+.		.			.			.
+.		.			.			.
+
+
+
+Ejercicio 6
+
+Un palíndromo es una secuencia de caracteres que se lee igual al derecho y al
+revés. Por ejemplo: 12321,55555, 45554 y 11611. Escriba una aplicación que lea
+un entero de cinco dígitos y determine si es un palindromo. Si el número no es
+de cinco dígitos que muestre un mensaje de error y cuando desaparezca el mensaje
+que vuelva a pedir otro número.
+
+
+
+Ejercicio 7
+
+Escriba una aplicación que utilice sólo las instrucciones de salida
+
+System.out.print ("* ");
+System.out.print (" ");
+System.out.println ();
+
+para mostrar el patrón de tablero de damas que se muestra a continuación.
+
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+  
+Observe que una llamada al método System.out.println sin argumentos hace que el
+programa imprima un solo carácter de nueva linea.
+
+
+
+Ejercicio 8
+
+Escriba una aplicación que muestre en la ventana de consola los multiplos del
+entero 2, su ciclo no debe de terminar.
+
+
+
+Ejercicio 9
+
+Desarrolle una aplicación en Java que determine el sueldo bruto para cada
+empleado. La empresa paga la cuota normal en las primeras 40 horas de trabajo y
+paga cuota y media para el resto de horas. El programa le pedira el número de
+trabajadores. Y para cada trabajador el número de horas trabajadas, y la tarifa
+para cada hora. Debera de mostrar el sueldo bruto para cada trabajador.
+
+
+
+Ejercicio 10
+
+El factorial de un entero n no negativo se escribe como n! y se define de la
+siguiente manera:
+
+n!= n (n-1) (n-2) ... 1
+
+y
+
+n! = 1 (para n = 0)
+
+Escribe un programa 	que calcule el factorial del número que se le pasa, si es
+negativo mensaje de error.
+
+
+
+
+

@@ -1,0 +1,153 @@
+EJERCICIOS METODOS
+
+
+EJERCICIO 1
+
+Escriba un método llamado esPar que utilice el operador residuo (%) para
+determinar si un entero dado es par. El metodo debe de tomar un argumento
+entero y devolver true si el entero es par, y false en caso contrario. Incorpore
+este método en un applet que reciba como entrada una secuencia de enteros (uno
+a la vez, utilizando un objeto JTextField).
+
+
+
+EJERCICIO 2
+
+Escriba un método llamado cuadradoDeAsteriscos que muestre un cuadrado de relleno
+(mismo número fila y columnas) de asteriscos cuyo lado sea especificado en el
+parámetro entero lado. Ej, lado es 4 el método debe de mostrar:
+
+****
+****
+****
+****
+
+Incorpore este método a un applet que reciba como entrada por parte del usuario
+un valor entero lado, y que realice el dibujo con el método cuadradoDeAsteriscos.
+Este método debe de llamarse desde el método paint del applet, y que debe de
+recibir el objeto Graphics de paint.
+
+
+
+EJERCICIO 3
+
+Modifique el método creado en el ejercicio anterior para formar el cuadrado con
+cualquier carácter que este contenido en el parámetro tipo carácter caracterRelleno.
+Por ejemplo, si lado es 5 y caracterRelleno es "#", el método debe imprimir
+
+#####
+#####
+#####
+#####
+#####
+
+
+
+EJERCICIO 4
+
+Escriba un applet que utilice un método llamado circuloArea, que pida al usuario
+el radio de un círculo y que calcule e imprima el área de ese círculo.
+
+
+
+EJERCICIO 5
+
+Implemente los siguientes métodos enteros:
+
+a ) El método centigrados que devuelva la equivalencia en grados Centígrados de
+una temperatura en grados Fahrenheit, utilizando el cálculo:
+
+C = 5.0 / 9.0 * ( F - 32 );
+
+b ) El método fahrenheit que devuelve la equivalencia en grados Fahrenheit de una
+temperatura en grados Centígrados, utilizando el cálculo:
+
+F = 9.0 / 5.0 * C + 32;
+
+c ) Utilice los métodos de las partes (a) y (b) para escribir un applet que
+permite al usuario, ya sea escribir una temperatura en grados Fahrenheit y mostrar
+su equivalente en grados Centígrados, o escribir una temperatura en grados
+Centígrados y mostrar su equivalente en grados Fahrenheit.
+
+Nota: Este applet requerirá dos objetos JTextField que tengan eventos de acción
+registrados. Cuando se llama a actionPerformed, el parámetro ActionEvent cuenta
+con el método getSource() para determinar con cuál componente de la GUI 
+interactuó el usuario. El método actionPerformed debe contener una instrucción
+if .. else de la forma
+
+if ( actionEvent.getsource()  == entrada1 ) {
+	// procesar la interacción de entrada1 aquí
+}
+else {
+	if ( actionEvent.getSource() == entrada2 ) {
+		// procesar la interacción de entrada2 aquí
+	}
+}
+
+donde entrada1 y entrada2 son referencia a objetos JTextField
+
+
+
+EJERCICIO 6
+
+Escriba un método llamado minimo3 que devuelva el menor de tres números de punto
+flotante. Use el método Math.min para implementar minimo3. Incorpore el método
+en un applet que reciba como entrada los valores por parte del usuario, y 
+determine el valor menor. Muestre el resultado en la barra de estado.
+
+
+
+EJERCICIO 7
+
+
+Escriba un método recursivo llamado potencia (base, exponente) que, al ser
+llamado, devuelva el resultado de
+
+	base(elevado exponente)
+
+Por ejemplo pontencia (3, 4) = 3 * 3 * 3 * 3. Suponga exponente es un entero
+mayor o igual a 1.
+
+Ayuda:
+
+base (elevado a exponente) = base * base (elevado a exponente - 1 )
+
+caso elemental:
+
+base (elevado a 1) = base
+
+
+
+EJERCICIO 8
+
+El máximo común divisor de los enteros "x" e "y" es el entero más grande que puede
+dividir tanto a "x" como a "y". Escriba un método recursivo llamado mcd que devuelva
+el máximo común divisor de "x" e "y". El mcd de "x" e "y" se define recursivamente
+de la siguiente manera: si "y" es igual a 0, entonces mcd (x,y) e "x"; de no ser
+así, mcd (x,y) es mcd (y, x%y), en donde % es el operador modulo.
+
+
+
+EJERCICIO 9
+
+Escriba un applet que juegue a "adivina un número" de la siguiente manera: su
+programa elige el número a adivinar, seleccionando un enteror aleatorio en el
+rango de 1 a 1000. El applet muestra el indicador "Adivina un número entre 1 y 1000"
+enseguida de un objeto JTextField. El jugador escribe su primer intento en el
+objeto JTextField y oprime Intro. Si la respuesta del jugador es incorrecta, su
+programa debe mostrar el mensaje "Demasiado alto, Intentelo de nuevo", o "Demasiado
+bajo, Intente de nuevo", en la barra de estado, para ayudar que el jugador se
+acerque a la respuesta correcta. El programa debe borrar el objeto JTextField de
+manera que el usuario pueda escribir su siguiente intento. Cuando el usuario
+escriba la respuesta correcta, muestre el mensaje ¡Felicidades, Adivinó el número!
+en la barra de estado y borre el objeto JTextField de manera que el usuario pueda
+jugar otra vez.
+
+
+EJERCICIO 10
+
+Escriba un applet que simule el lanzamiento de monedas. Deje que el programa lance
+una moneda cada vez que el usuario oprima el boton "lanzar". Cuente el número
+de veces que aparezca cada uno de los lados de la moneda. Muestre los resultados.
+El programa debe de llamar al método "tirar", que no tiene argumentos y devuelve
+false en caso de cara y true en caso de cruz.

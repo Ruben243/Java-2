@@ -1,0 +1,161 @@
+EJERCICIOS ARRAYS
+
+
+EJERCICIO 1
+
+Use el arreglo unidimensional para resolver el siguiente problema; escriba un
+applet que reciba como entrada 5 números, cada uno de los cuales debe estar
+entre 10 y 100, inclusive. A medida, que se lea cada número, muéstrelo solamente
+si no es un duplicado de un número que ya se ha leído. Prepárese para el "peor
+caso", en el que los 5 números son diferentes.  Mostrar los resultados en un objetoJTextArea. Utilizar el método setText de JTextArea para actualizar los resultados después que el usuario introduzca cada uno de los valores.
+
+
+
+EJERCICIO 2
+
+Una pequeña aerolínea acaba de comprar un ordenador para su nuevo sistema de
+reservas automatizado. Se le pide realizar un programa para el nuevo sistema.
+Usted va a escribir un applet para asignar asientos en cada vuelo del único
+avión de las aerolíneas (capacidad: 10 asientos).
+
+Su programa debe mostrar las siguientes alternativas: Por favor escriba 1 para
+PrimeraClase y Por favor escriba 2 para Económico. Si el usuario escribe 1, su
+programa debe asignarle un asiento en la sección de primera clase (asientos 1 a 5).
+Si la persona escribe 2, su programa debe asignarle un asiento en la sección
+económica (asientos 6 a 10). Su programa deberá entonces imprimir un pase de
+abordaje, indicando el número del asiento de la persona y si se encuentra en la
+sección de primera clase o económica del avión.
+
+Usar una matriz unidimensional del tipo primitivo boolean para representar la
+tabla de asientos del avión.Inicialice, todos los elementos del arreglo con false
+para indicar que todos los asientos estan vacíos. A medida que se asigne cada
+asiento, establezca los elementos correspondientes del arreglo en true para inidicar
+que ese elemento ya no está disponible.
+
+Su programa nunca deberá asignar un asiento que ya haya sido asignado. Cuando esté
+llena la sección indicar "SU SECCIÓN ESTA COMPLETA, RESERVA NO REALIZADA".
+
+NOTA: Utilizar una fuente Monospaced, negrita, tamaño 12 para el mensaje de solicitud de opción y una fuente ARIAL, negrita, tamaño 14 para mostrar el
+billete
+
+
+
+EJERCICIO 3
+
+En este problema usted recreará la clásica carrera de la tortuga y la liebre.
+Utilizará la generación de números aleatorios para desarrollar una simulación
+de este memorable suceso.
+
+Nuestros competidores empezarán la carrera en la posición 1 de 70 posiciones.
+Cada posición representa a una posible posición a lo largo del curso de la
+carrera. La linea de meta se encuentra en la posición 70. El primer
+competidor en llegar a la posición 70 recibirá una cubeta llena con zanahorias
+y lechuga frescas. El recorrido se abre paso hasta la cima de una resbalosa
+montaña, por lo que ocasionalmente los competidores pierden terreno.
+
+Un reloj hace tictac una vez por segundo. Con cada tic del reloj, su applet debe
+ajustar la posición de los animales de acuerdo a unas reglas. Use variables para
+llevar a cabo el registro de las posiciones de los animales (los números son
+del 1 al 70). Empiece con cada animal en la posición 1 (la "puerta de inicio").
+Si un animal se resbala hacia la izquierda antes de la posición 1, regréselo a
+la posición 1.
+
+Reglas:
+
+Se generan produciendo un número aleatorio i para la tortuga y otro para la liebre.
+
+Los números cada uno de ellos en el rango de 1 a 10, ambos inclusive.
+
+TORTUGA
+
+"Paso pesado rápido" cuando 1 <= i <= 5, 3 posiciones a la derecha
+"Resbalón" cuando 6 <= i <= 7, 6 posiciones a la izquierda
+"Paso pesado lento" cuando 8 <= i <= 10, 1 posición a la derecha
+
+LIEBRE
+
+"Dormir" cuando 1 <= j <= 2, Ningún movimiento
+"Gran salto" cuando 3 <= j <= 4, 9 posiciones a la derecha
+"Gran resbalón" cuando 5 <= j <= 6, 12 posiciones a la izquierda
+"Pequeño salto" cuando 7 <= j <= 9, 1 posición a la derecha
+"Pequeño resbalón" cuando j = 10, 2 posiciones a la izquierda
+
+Empiece la carrera imprimiendo el mensaje
+
+¡¡¡ PUM !!!
+¡¡¡ Y ARRANCAN !!!
+
+Luego para cada tic de reloj, imprima una línea de 70 posiciones, mostrando la
+letra T en la posición de la tortuga y la letra L en la posición de la liebre.
+En ocasiones los competidores se encontrarán en la misma posición. En este caso,
+la tortuga muerde a la liebre y su programa debe imprimir ¡¡OUCH!! Empezando en
+esa posición. Todas las posiciones de impresión distintas de la T, la L o el
+mensaje ¡¡ OUCH !! (en caso de un empate) deben estar en blanco.
+
+Después de imprimir cada linea, compruebe si uno de los animales ha llegado o se
+ha pasado de la posición 70. De ser así, imprima quien fue el ganador y termine
+la simulación. Si la tortuga gana, imprima ¡¡¡ LA TORTUGA GANA !!! ¡¡¡ YAY !!!.
+Si la liebre gana. Qué mal. Si ambos animales ganan en el mismo tic del reloj
+tal vez usted quiera favorecer a la tortuga o tal vez quiera imprimir ES UN EMPATE.
+Si ninguno de los dos animales gana, ejecute el ciclo de nuevo para simular el 
+siguiente tic del reloj.
+
+
+NOTA: Mostrar el recorrido con letra ARIAL, TAMAÑO 14.
+
+
+EJERCICIO 4
+
+Escriba un método recursivo llamado imprimirArreglo que tome un arreglo de valores
+int y la longitud del arreglo como argumentos, y que no devuelva nada. Este método
+deberá dejar de procesarse y regresar cuando reciba un arreglo de longitud cero.
+
+
+NOTA: Mostrar el array con fuente MONOSPACED, TAMAÑO 12.
+
+
+
+EJERCICIO 5
+
+Un programa que calcule el NIF de tú DNI.
+
+NOTA: 
+
+Debemos de tener un array unidimensional de caracteres que tenga las letras
+almacenadas en el siguiente orden 'TRWAGMYFPDXBNJZSQVHLCKE'. Y para calcular
+el NIF, es DNI % 23.
+
+Mostrar el NIF con fuente Monospaced, negrita, tamaño 14.
+
+
+
+EJERCICIO 6
+
+Un palíndromo es una cadena que se deletrea igual al derecho y al revés. Ej:
+ojo, radar, oso. Escriba un método recursivo llamado pruebaPalindromo que
+devuelva el valor true tipo boolean si la cadena guardada en el arreglo es un
+palíndromo, y false en caso contrario.
+
+Nota: Utilizar el metodo toCharArray de la clase String para obtener un array char
+que contenga los caracteres en el objeto String.
+
+Mostrar el resultado con una fuente ARIAL, tamaño 20.
+
+
+
+EJERCICIO 7
+
+Crear un applet el cuál os pida en un JTextField el número de elementos que van
+a componer el array unidimensional y después de introducir ese número, que ponga ese JTextField
+como no editable y en otro diferente os vaya pidiendo enteros uno a uno para rellenar
+el array. Una vez introducidos todos los enteros, mostrar el resultado del array
+en un JTextArea.
+
+
+
+EJERCICIO 8
+
+Escriba un método recursivo llamado minimoRecursivo que tome como argumentos un
+array de enteros y su longitud, y que devuelva el elemento más pequeño del arreglo.
+Este método debe dejar de procesarse y regresar cuando reciba un arreglo de un
+elemento.
